@@ -1,4 +1,3 @@
-
 let cells = document.querySelectorAll(".cell");
 let shape = "X";
 let cellNumber = 0
@@ -47,12 +46,12 @@ function checkWinner() {
                 shapes++
             };
             if (shapes == 3) {
-                alert("X Wins")
+                alert(shape + "Wins")
                 resetGame ()
                 return;
             }
             if (cellNumber == 9 && shapes == 3) {
-                alert("O Wins")
+                alert(shape + "Wins")
                 resetGame ()
                 return;
             }
